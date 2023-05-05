@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <div class="box">
+            <h1 class="word">Word counter</h1>
+
+            <textarea id="words"></textarea>
+            <br><br><br>
+            <span id="count"> <span>
+                    <button onclick="countwords()">Button</button>
+
+        </div>
+    </center>
+
+    <script>
+        const countwords = () => {
+            let noc = document.getElementById('words').value.length;
+            let now = document.getElementById('count')
+            document.getElementById('count').innerHTML = " TEXT LETTER = " + noc;
+        }
+    </script>
+
+
+
+
+
+
+
+    <!-- <script src="./index.js"></script> -->
+
+    <!-- <script >
+        function charCount(textarea) {
+            var length = textarea.value.length;
+            alert (length);
+                // $('#count').text(length);
+            }
+
+
+
+    </script> -->
+</body>
+
+</html>
